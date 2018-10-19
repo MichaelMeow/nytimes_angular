@@ -9,7 +9,7 @@ import { ARTICLES } from '../MOCK-articles'
 })
 export class ArticleGroupsComponent implements OnInit {
 
-  @Input() i: number[];
+  @Input() i: string[];
   articles: Article[] = ARTICLES;
 
   constructor() { }

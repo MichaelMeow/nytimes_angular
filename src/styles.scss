@@ -71,16 +71,26 @@ $updatedGrey: #adadb0;
   color: lighten($updatedGrey, 20%);
   font-size: 8px;
   font-family: 'Domine', serif;
-
+  margin-bottom: 10px;
 }
 @mixin twoThirdsRight {
   @include flexRowCenter;
-  & > div:first-child{
+  & > *:first-child{
     padding-right: 15px;
     width: (100/3)* 1%;
   }
-  & > div:last-child {
+  & > *:last-child {
     width: ((100/3)*2)* 1%;
+  }
+}
+@mixin twoThirdsLeft {
+  @include flexRowCenter;
+  & > *:first-child{
+    padding-right: 15px;
+    width: ((100/3)*2)* 1%;
+  }
+  & > *:last-child {
+    width: (100/3)* 1%;
   }
 }
 @mixin halves {
@@ -88,17 +98,17 @@ $updatedGrey: #adadb0;
   div:first-child {
     padding-right: 15px;
   }
-  & > div{
+  & > *{
     width: 50%;
   }
 }
 @mixin thirds {
   @include flexRowCenter;
-  & > div{
+  & > *{
     padding-right: 15px;
     width: (100/3)* 1%;
   }
-  & > div:last-child {
+  & > *:last-child {
     padding-right: 0px;
   }
 }
@@ -311,6 +321,9 @@ $updatedGrey: #adadb0;
   }
   .twoThirdsRight{
     @include twoThirdsRight;
+  }
+  .twoThirdsLeft{
+    @include twoThirdsLeft;
   }
   .thirds{
     @include thirds;

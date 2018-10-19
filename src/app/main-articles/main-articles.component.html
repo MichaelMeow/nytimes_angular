@@ -1,2 +1,7 @@
-<app-article-groups [i]="[0,1,2]"></app-article-groups>
-<app-article-groups [i]="[4,5,3]"></app-article-groups>
+<app-article-groups [i]="['3','','4','5','twoThirdsLeft']" class="leftRow"></app-article-groups>
+<app-article-groups [i]="['2','1','0','','twoThirdsRight']" class="leftRow"></app-article-groups>
+
+
+<!-- key: i [first article on left, second article on left(optional: leave ''), first article on right, second article on right(optional: leave ''), Layout] -->
+
+<!-- Layout options: halves, thirds, twoThirdsLeft, twoThirdsRight. -->

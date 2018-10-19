@@ -1,15 +1,16 @@
-<div class="leftRow">
-  <div class="halves">
-    <div class="oneLeft cell">
-      <div class="oneLeftTop  cellBottom">
-        <app-article-block [article]="articles[i[0]]"></app-article-block>
-      </div>
-      <div class="oneLeftBottom">
-        <app-article-block [article]="articles[i[1]]"></app-article-block>
-      </div>
+
+<div class="{{i[4]}}">
+  <div class= "cell">
+    <div [ngClass]="{'cellBottom': i[1] }">
+      <app-article-block [article]="articles[i[0]]"></app-article-block>
     </div>
-    <div class="oneRight">
-      <app-article-block [article]="articles[i[2]]"></app-article-block>
-    </div>
+    <app-article-block [article]="articles[i[1]]" *ngIf="i[1]"></app-article-block>
   </div>
+  <div>
+      <div [ngClass]="{'cellBottom': i[3] }">
+        <app-article-block [article]="articles[i[2]]"></app-article-block>
+      </div>
+      <app-article-block [article]="articles[i[3]]" *ngIf="i[3]"></app-article-block>
+  </div>
+
 </div>

@@ -12,6 +12,9 @@ import { ArticleBlockComponent } from './article-block/article-block.component';
 import { OpinionHeadComponent } from './opinion-head/opinion-head.component';
 import { OpinionSubComponent } from './opinion-sub/opinion-sub.component';
 import { EditorialSubComponent } from './editorial-sub/editorial-sub.component';
+import { MainArticlesComponent } from './main-articles/main-articles.component';
+import { MainEditorialsComponent } from './main-editorials/main-editorials.component';
+import { ArticleGroupsComponent } from './article-groups/article-groups.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { EditorialSubComponent } from './editorial-sub/editorial-sub.component';
     ArticleBlockComponent,
     OpinionHeadComponent,
     OpinionSubComponent,
-    EditorialSubComponent
+    EditorialSubComponent,
+    MainArticlesComponent,
+    MainEditorialsComponent,
+    ArticleGroupsComponent
   ],
   imports: [
     BrowserModule

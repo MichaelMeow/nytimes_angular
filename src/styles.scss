@@ -104,6 +104,7 @@ $updatedGrey: #adadb0;
 }
 
 // main
+
 .bodyMargin{
   height: 100%;
   margin: 0px 60px;
@@ -120,6 +121,7 @@ $updatedGrey: #adadb0;
   height: 95px;
   border-bottom: 1px solid $lightGrey;
   font-size: 11px;
+  font-family: sans-serif;
 }
 
 .headerTop, .upperRightButtons, .upperLeftIcons, .dates {
@@ -189,6 +191,7 @@ $updatedGrey: #adadb0;
   flex-direction: row;
   justify-content: center;
   border-bottom: 1px solid black;
+  font-family: sans-serif;
   span {
     padding: .6%;
     font-size: 11px;
@@ -206,6 +209,7 @@ $updatedGrey: #adadb0;
 .quickNews {
   padding: 10px 0px;
   border-bottom: 1px double black;
+  font-family: sans-serif;
   .quickNewsInnerBlock {
     @include flexRowCenter;
   }

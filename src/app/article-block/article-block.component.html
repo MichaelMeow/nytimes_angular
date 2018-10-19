@@ -10,12 +10,12 @@
     <li>{{article.subtitle2}}</li>
     <li *ngIf="article.subtitle3">{{article.subtitle3}}</li>
   </ul>
-  <div class="updatedRed">
+  <div class="updated">
     {{article.time}}
   </div>
 </div>
 <div *ngIf="article.imageURL">
-  <img src="article.imageURL" alt="">
+  <img src="{{article.imageURL}}" alt="">
 </div>
 <div class="caption" *ngIf="article.caption">
   {{article.caption}}

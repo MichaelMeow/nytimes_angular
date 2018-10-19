@@ -1,0 +1,25 @@
+<div class="headline1">
+  {{article.title}}
+</div>
+<div class="subheadline">
+  <div *ngIf="!article.subtitle2">
+    {{article.subtitle}}
+  </div>
+  <ul *ngIf="article.subtitle2">
+    <li>{{article.subtitle}}</li>
+    <li>{{article.subtitle2}}</li>
+    <li *ngIf="article.subtitle3">{{article.subtitle3}}</li>
+  </ul>
+  <div class="updatedRed">
+    {{article.time}}
+  </div>
+</div>
+<div *ngIf="article.imageURL">
+  <img src="article.imageURL" alt="">
+</div>
+<div class="caption" *ngIf="article.caption">
+  {{article.caption}}
+  <div class="captionPhoto">
+    {{article.captionCredit}}
+  </div>
+</div>

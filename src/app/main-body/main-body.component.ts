@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from '../models/article.model'
+import { ARTICLES } from '../MOCK-articles'
 
 @Component({
   selector: 'app-main-body',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-body.component.scss']
 })
 export class MainBodyComponent implements OnInit {
+
+  articles: Article[] = ARTICLES;
 
   constructor() { }
 

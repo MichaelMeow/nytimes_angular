@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { QuickNewsComponent } from './quick-news/quick-news.component';
 import { MainBodyComponent } from './main-body/main-body.component';
 import { QuickNewsBlockComponent } from './quick-news-block/quick-news-block.component';
+import { ArticleBlockComponent } from './article-block/article-block.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { QuickNewsBlockComponent } from './quick-news-block/quick-news-block.com
     NavBarComponent,
     QuickNewsComponent,
     MainBodyComponent,
-    QuickNewsBlockComponent
+    QuickNewsBlockComponent,
+    ArticleBlockComponent
   ],
   imports: [
     BrowserModule

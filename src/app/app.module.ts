@@ -11,6 +11,7 @@ import { QuickNewsBlockComponent } from './quick-news-block/quick-news-block.com
 import { ArticleBlockComponent } from './article-block/article-block.component';
 import { OpinionHeadComponent } from './opinion-head/opinion-head.component';
 import { OpinionSubComponent } from './opinion-sub/opinion-sub.component';
+import { EditorialSubComponent } from './editorial-sub/editorial-sub.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { OpinionSubComponent } from './opinion-sub/opinion-sub.component';
     QuickNewsBlockComponent,
     ArticleBlockComponent,
     OpinionHeadComponent,
-    OpinionSubComponent
+    OpinionSubComponent,
+    EditorialSubComponent
   ],
   imports: [
     BrowserModule

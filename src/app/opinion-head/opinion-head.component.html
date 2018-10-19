@@ -1,0 +1,22 @@
+<div class="opinionCell cellBottom" [ngClass]="{'halves': editorial.authorImageURL }">
+  <div>
+    <div class="authorImage" *ngIf="editorial.authorImageURL">
+      <img src="{{editorial.authorImageURL}}" alt="">
+    </div>
+    <div class="opinionAuthor">
+      {{editorial.author}}
+    </div>
+    <div class="headline3">
+      {{editorial.title}}
+    </div>
+    <div class="subheadline">
+    {{editorial.subtitle}}
+    </div>
+    <div class="updated">
+      {{editorial.time}}
+    </div>
+  </div>
+  <div class="articleImage" *ngIf="editorial.imageURL">
+    <img src="{{editorial.imageURL}}" alt="">
+  </div>
+</div>

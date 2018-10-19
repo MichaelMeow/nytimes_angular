@@ -40,42 +40,10 @@
       <div class="opinionTitle">
         <span class="headline2">Opinion</span> <svg width="7" height="11" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l4.333 5L1 11" stroke="#121212" stroke-width="2" fill="none" fill-rule="evenodd"></path></svg>
       </div>
-      <div class="opinionCell cellBottom">
-        <div class="opinionAuthor">
-          The Editorial Board
-        </div>
-        <div class="headline3">
-          There Oughta Be a Law ...
-        </div>
-        <div class="subheadline">
-          President Trump's contempt for the Constitution confirms the harshest charges leveled in recent accounts of his off-the-rails presidency.
-        </div>
-        <div class="updated">
-          1h ago
-        </div>
-      </div>
-      <div class="opinionCell halves cellBottom">
-        <div>
-          <div class="authorImage">
-            <img src="img/Friedman-Richard-circular-thumbLarge.jpg" alt="">
-          </div>
-          <div class="opinionAuthor">
-            Richard A. Friedman
-          </div>
-          <div class="headline3">
-            The Big Myth About Teenage Anxiety
-          </div>
-          <div class="subheadline">
-            Relax: The digital age is not wrecking your kid's brain.
-          </div>
-          <div class="updated">
-            1h ago
-          </div>
-        </div>
-        <div class="articleImage">
-          <img src="img/09friedman-square640.jpg" alt="">
-        </div>
-      </div>
+        <app-opinion-head [editorial]="editorials[0]"></app-opinion-head>
+        <app-opinion-head [editorial]="editorials[1]"></app-opinion-head>
+
+
       <div class="opinionTwoColumn halves">
         <div class="opinionCell cell">
           <div class="cellBottom">

@@ -9,6 +9,8 @@ import { QuickNewsComponent } from './quick-news/quick-news.component';
 import { MainBodyComponent } from './main-body/main-body.component';
 import { QuickNewsBlockComponent } from './quick-news-block/quick-news-block.component';
 import { ArticleBlockComponent } from './article-block/article-block.component';
+import { OpinionHeadComponent } from './opinion-head/opinion-head.component';
+import { OpinionSubComponent } from './opinion-sub/opinion-sub.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ArticleBlockComponent } from './article-block/article-block.component';
     QuickNewsComponent,
     MainBodyComponent,
     QuickNewsBlockComponent,
-    ArticleBlockComponent
+    ArticleBlockComponent,
+    OpinionHeadComponent,
+    OpinionSubComponent
   ],
   imports: [
     BrowserModule

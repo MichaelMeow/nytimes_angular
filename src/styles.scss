@@ -93,6 +93,17 @@ $updatedGrey: #adadb0;
     width: (100/3)* 1%;
   }
 }
+
+@mixin specialFeature {
+  @include flexRowCenter;
+  div:first-child {
+    padding-right: 15px;
+  }
+  & > *{
+    width: 50%;
+  }
+}
+
 @mixin halves {
   @include flexRowCenter;
   div:first-child {

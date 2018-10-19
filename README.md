@@ -1,11 +1,11 @@
 Real News
-![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes/master/img/real.png)
+![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes_angular/src/assets/images/real.png)
 Fake News
-![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes/master/img/fake.png)
+![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes_angular/src/assets/images/fake.png)
 
 # Fake New York Times
 
-#### Fake NY Times Home Page, 9/7/18
+#### Fake NY Times Home Page, 10/19/18
 
 #### By Michael Meow
 

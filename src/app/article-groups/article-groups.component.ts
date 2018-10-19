@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input,  OnInit } from '@angular/core';
+import { Article } from '../models/article.model'
+import { ARTICLES } from '../MOCK-articles'
 
 @Component({
   selector: 'app-article-groups',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./article-groups.component.scss']
 })
 export class ArticleGroupsComponent implements OnInit {
+
+  @Input() i: number[];
+  articles: Article[] = ARTICLES;
 
   constructor() { }
 

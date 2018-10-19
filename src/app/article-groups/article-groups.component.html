@@ -1,3 +1,15 @@
-<p>
-  article-groups works!
-</p>
+<div class="leftRow">
+  <div class="halves">
+    <div class="oneLeft cell">
+      <div class="oneLeftTop  cellBottom">
+        <app-article-block [article]="articles[i[0]]"></app-article-block>
+      </div>
+      <div class="oneLeftBottom">
+        <app-article-block [article]="articles[i[1]]"></app-article-block>
+      </div>
+    </div>
+    <div class="oneRight">
+      <app-article-block [article]="articles[i[2]]"></app-article-block>
+    </div>
+  </div>
+</div>

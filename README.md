@@ -1,6 +1,29 @@
-# Nytimes
+Real News
+![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes/master/img/real.png)
+Fake News
+![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes/master/img/fake.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+# Fake New York Times
+
+#### Fake NY Times Home Page, 9/7/18
+
+#### By Michael Meow
+
+## Description
+
+A clone of the New York Times home page built with Angular.
+
+## Completed Features
+
+This page has a component based layout that can easily exchange article content based on a JSON object full of articles.
+
+API Key for NYTimes API has been obtained and experimented with, and is ready to be used next week.
+
+## Features to be added
+
+The features I would like to add next week are an API that grabs NYTimes articles and places them into the home page.  
+
+I would also like an admin page which allows for easy choice for the type of articles displayed, and also allows the user to pick different layout options so the articles fit to the page.
 
 ## Development server
 
@@ -22,6 +45,22 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Known Bugs
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+There are no known bugs.
+
+## Support and contact details
+
+Please contact dearmichaelmeow@gmail.com with questions or comments.
+
+## Technologies Used
+
+This page uses SASS.
+
+### License
+
+This site is licensed as CDL.  
+
+All content is property of the New York Times.
+
+Copyright (c) 2018 Michael Meow

@@ -1,43 +1,7 @@
 <div class="quickNews">
-  <div class="quickNewsBlock">
-    <div class="quickNewsInnerBlock cell">
-      <img src="img/07us-ambriefing-kavanaugh-AMCORE-square640.jpg" alt="briefing logo">
-      <div class="quickNewsText">
-        <div class="sansHeadline">
-          Your Friday Briefing
-        </div>
-        <div class="sansSub">
-          Here's what you need to know to start your day.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="quickNewsBlock">
-    <div class="quickNewsInnerBlock cell">
-      <img src="img/the-daily-album-art-square320-v3.jpg" alt="daily logo">
-      <div class="quickNewsText">
-        <div class="sansHeadline">
-          Listen to 'The Daily'
-        </div>
-        <div class="sansSub">
-          The significance of Judge Brett Kavanaugh's confidential emails.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="quickNewsBlock">
-    <div class="quickNewsInnerBlock cell">
-      <img src="img/tips-promo-thumbLarge.png" alt="speech bubble">
-      <div class="quickNewsText">
-        <div class="sansHeadline">
-          Got a confidential news tip?
-        </div>
-        <div class="sansSub">
-          Do you have the next big story? Share it with our journalists.
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-quick-news-block [quick]="quicknewsblocks[0]"></app-quick-news-block>
+  <app-quick-news-block [quick]="quicknewsblocks[1]"></app-quick-news-block>
+  <app-quick-news-block [quick]="quicknewsblocks[2]"></app-quick-news-block>
   <div class="quickNewsBlock">
     <div class="stocks cell">
       <div class="stock">

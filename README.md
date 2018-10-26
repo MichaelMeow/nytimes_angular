@@ -2,6 +2,8 @@ Real News
 ![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes_angular/master/src/assets/images/real.png)
 Fake News
 ![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes_angular/master/src/assets/images/fake.png)
+Custom Subject
+![alt text](https://raw.githubusercontent.com/michaelmeow/nytimes_angular/master/src/assets/images/tech.png)
 
 # Fake New York Times
 

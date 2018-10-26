@@ -25,6 +25,8 @@ The features I would like to add next week are an API that grabs NYTimes article
 
 I would also like an admin page which allows for easy choice for the type of articles displayed, and also allows the user to pick different layout options so the articles fit to the page.
 
+A modal window will appear when the page loads, and the user will select the type of content they want to display.  Then they will select which types of layout to use based on the content that the API generates.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { ArticleService } from '../article.service'
+import { ARTICLES } from '../MOCK-articles'
 
 @Component({
   selector: 'app-article-form',
@@ -9,12 +10,23 @@ import { ArticleService } from '../article.service'
   providers: [ ArticleService ]
 })
 export class ArticleFormComponent implements OnInit {
-  articles = null;
+  articles = ARTICLES;
 
   constructor(private APIArticles: ArticleService) { }
 
   getArticles( subject: string ){
     this.APIArticles.saveArticlesByNewsDesk(subject);
+  }
+
+  imageToggle (imageNumber: number, toggle: string){
+    console.log(imageNumber)
+    if (toggle == "hide"){
+      this.articles[imageNumber].imageShow = false;
+      console.log("false")
+    }
+    if (toggle == "show"){
+      this.articles[imageNumber].imageShow = true;
+    }
   }
 
   ngOnInit() {

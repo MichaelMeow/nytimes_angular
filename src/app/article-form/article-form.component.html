@@ -13,3 +13,9 @@
     <option value="Weather"> Weather </option>
   </select>
 <button type="button" name="button" (click)='getArticles(newsDesk.value)'>Return Results</button>
+
+<div *ngFor="let article of articles; let i = index">
+Article {{i}} Image:
+<button type="button" name="button" (click)="imageToggle(i, 'hide')">hide</button>
+<button type="button" name="button" (click)="imageToggle(i, 'show')">show</button>
+</div>

@@ -1,4 +1,4 @@
-<div *ngIf="article.imageURL">
+<div *ngIf="article.imageURL && article.imageShow">
   <img src="http://nyt.com/{{article.imageURL}}" alt="">
 </div>
 <div class="caption" *ngIf="article.caption">

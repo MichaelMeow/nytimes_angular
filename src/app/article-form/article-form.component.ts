@@ -19,17 +19,16 @@ export class ArticleFormComponent implements OnInit {
   }
 
   imageToggle (imageNumber: number, toggle: string){
-    console.log(imageNumber)
     if (toggle == "hide"){
       this.articles[imageNumber].imageShow = false;
-      console.log("false")
     }
     if (toggle == "show"){
       this.articles[imageNumber].imageShow = true;
     }
   }
-
+  
   ngOnInit() {
+    this.getArticles( "National" );
   }
 
 }

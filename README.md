@@ -19,13 +19,21 @@ This page has a component based layout that can easily exchange article content 
 
 API Key for NYTimes API has been obtained and experimented with, and is ready to be used next week.
 
+API grabs articles from different subjects and populates front page.
+
+Front page images are able to be toggled.
+
 ## Features to be added
 
-The features I would like to add next week are an API that grabs NYTimes articles and places them into the home page.  
+Allow the user to pick different layout options so the articles fit to the page.
 
-I would also like an admin page which allows for easy choice for the type of articles displayed, and also allows the user to pick different layout options so the articles fit to the page.
+Be able to hide the admin modal.
 
-A modal window will appear when the page loads, and the user will select the type of content they want to display.  Then they will select which types of layout to use based on the content that the API generates.
+Article time should display properly.
+
+Load editorials from API.  Load Quick News content at top of page from API.
+
+Load different subjects for each front page row and title them.
 
 ## Instructions
 

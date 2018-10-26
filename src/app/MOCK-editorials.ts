@@ -13,4 +13,5 @@ export const EDITORIALS: Editorial[] = [
   new Editorial('','Does Anyone Really Know What ‘Medicare for All’ Means?', '', '', 'Elisabeth Rosenthal and Shefali Luthra', ''),
   new Editorial('','The Neighborhood Is the Unit of Change', '', '', 'David Brooks', 'https://static01.nyt.com/images/2018/04/03/opinion/david-brooks/david-brooks-thumbLarge-v2.png?quality=75&amp;auto=webp&amp;disable=upscale'),
   new Editorial('','Voting Should Be Easy. Why Isn’t It?', '', '', 'The Editorial Board', ''),
+
 ]

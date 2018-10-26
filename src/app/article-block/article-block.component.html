@@ -1,16 +1,16 @@
-<div *ngIf="article.imageURL && article.imageShow">
+<div *ngIf="article && article.imageURL && article.imageShow">
   <img src="http://nyt.com/{{article.imageURL}}" alt="">
 </div>
-<div class="caption" *ngIf="article.caption">
+<div class="caption" *ngIf="article && article.caption">
   {{article.caption}}
-  <div class="captionPhoto">
+  <div class="captionPhoto" *ngIf="article">
     {{article.captionCredit}}
   </div>
 </div>
-<div class="headline1">
+<div class="headline1" *ngIf="article">
   {{article.title}}
 </div>
-<div class="subheadline">
+<div class="subheadline" *ngIf="article">
   <div *ngIf="!article.subtitle2">
     {{article.subtitle}}
   </div>

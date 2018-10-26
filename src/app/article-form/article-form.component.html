@@ -13,8 +13,3 @@
     <option value="Weather"> Weather </option>
   </select>
 <button type="button" name="button" (click)='getArticles(newsDesk.value)'>Return Results</button>
-<div *ngIf="articles">
-  <div *ngFor="let article of articles.response.docs">
-    {{article.headline.main}}
-  </div>
-</div>

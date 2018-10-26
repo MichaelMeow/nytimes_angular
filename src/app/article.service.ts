@@ -17,11 +17,8 @@ export class ArticleService {
 
   articles: Article[] = ARTICLES;
 
-  getByNewsDesk(subject: string) {
-    return  this.http.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${nytKey}&fq=news_desk:(${subject})&fq=source:("The New York Times")&sort=newest&fl=headline, news_desk,snippet,multimedia,pub_date&page=0`);
-  }
-
   saveArticlesByNewsDesk(subject: string) {
+    this.articles.length = 0
     return this.http.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${nytKey}&fq=news_desk:(${subject})&fq=source:("The New York Times")&sort=newest&fl=headline, news_desk,snippet,multimedia,pub_date&page=0`)
     .subscribe(response => {
       let foundArticle: Article;
@@ -32,5 +29,4 @@ export class ArticleService {
       console.log(ARTICLES)
     });
   }
-
 }

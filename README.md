@@ -27,11 +27,9 @@ I would also like an admin page which allows for easy choice for the type of art
 
 A modal window will appear when the page loads, and the user will select the type of content they want to display.  Then they will select which types of layout to use based on the content that the API generates.
 
-API notes:
-  'begin_date': "20181026",
-  'fl': "headline, snippet, abstract, multimedia, pub_date"
-  'fq': "news_desk: \"national\""
-  &fq=source:("The New York Times")
+## Instructions
+
+Please obtain an API-key from New York Times Article Search API and place in environment.ts file: 'apiKey: 'YOUR API KEY HERE','.
 
 ## Development server
 

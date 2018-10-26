@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { ArticleGroupsComponent } from './article-groups/article-groups.componen
     ArticleGroupsComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule
   ],
   providers: [],

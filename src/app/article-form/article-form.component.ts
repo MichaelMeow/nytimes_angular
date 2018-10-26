@@ -16,7 +16,7 @@ export class ArticleFormComponent implements OnInit {
   getArticles( subject: string ){
     this.APIArticles.getByNewsDesk(subject).subscribe(response => {
       this.articles = response.json();
-      console.log(this.articles.response.docs[0]);
+      console.log(subject);
     })
   }
 

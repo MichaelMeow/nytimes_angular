@@ -16,7 +16,9 @@ export class ArticleService {
 
   getByNewsDesk(subject: string) {
     console.log(subject);
-    return this.http.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${environment.apiKey}&fq=source:("The New York Times")&begin_date=20181026&fq=news_desk:(${subject})&page=6`);
+    return this.http.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${environment.apiKey}&fq=news_desk:(${subject})&fq=source:("The New York Times")&sort=newest&fl=headline, news_desk&page=0`);
+
+
   }
 
 }

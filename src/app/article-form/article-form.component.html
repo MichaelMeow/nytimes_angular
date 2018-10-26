@@ -1,4 +1,20 @@
-<button type="button" name="button" (click)="getArticles('`National`')"></button>
+
+<label>Article News Desk:</label>
+  <select #newsDesk>
+    <option value="National"> National </option>
+    <option value="Sports"> Sports </option>
+    <option value="Culture"> Culture </option>
+    <option value="Business"> Business </option>
+    <option value="Foreign"> Foreign </option>
+    <option value="Movies"> Movies </option>
+    <option value="Science"> Science </option>
+    <option value="Technology"> Technology </option>
+    <option value="Washington"> Washington </option>
+    <option value="Weather"> Weather </option>
+  </select>
+<button type="button" name="button" (click)='getArticles(newsDesk.value)'>Return Results</button>
 <div *ngIf="articles">
-  {{articles}}
+  <div *ngFor="let article of articles.response.docs">
+    {{article.headline.main}}
+  </div>
 </div>

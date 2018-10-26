@@ -15,6 +15,7 @@ import { EditorialSubComponent } from './editorial-sub/editorial-sub.component';
 import { MainArticlesComponent } from './main-articles/main-articles.component';
 import { MainEditorialsComponent } from './main-editorials/main-editorials.component';
 import { ArticleGroupsComponent } from './article-groups/article-groups.component';
+import { ArticleFormComponent } from './article-form/article-form.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ArticleGroupsComponent } from './article-groups/article-groups.componen
     EditorialSubComponent,
     MainArticlesComponent,
     MainEditorialsComponent,
-    ArticleGroupsComponent
+    ArticleGroupsComponent,
+    ArticleFormComponent
   ],
   imports: [
     HttpModule,
